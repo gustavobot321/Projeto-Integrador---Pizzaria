@@ -1,30 +1,30 @@
 /* Paleta:
-#806550 (marrom rústico)
+#806550 (marrom rústico) 
 #B8A597 (bege acinzentado)
 #EDD9CC (creme claro)
 #B22008 (vermelho intenso)
 #880909 (vermelho escuro)
 */
-
-/* Reset */
+ 
+/* Reset, serve pra deixar tudo igual em qualquer navegador */  
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /*remove o espaçamento externo padrão dos elementos. */
+  padding: 0; /*remove o espaçamento interno padrão dos elementos. */
+  box-sizing: border-box; /*faz com que largura e altura de caixas incluam as bordas e o padding, facilitando o controle do layout. */
 }
 
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background: #EDD9CC; /* fundo suave */
-  color: #333;
+body {  /*Corpo da página */
+  font-family: "Poppins", Arial, sans-serif; /*define a fonte do texto */
+  background: #EDD9CC; /*define a cor de fundo da página (um creme claro).  */
+  color: #333; /*define a cor padrão do texto (cinza escuro quase preto) */
 }
 
-/* Navbar */
+/* Navbar ( Menu de navegação*/
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  display: flex; /*transforma a navbar em um container flexível. */
+  justify-content: space-between; /*joga os itens para as extremidades (um na esquerda, outro na direita, espaço no meio). */
+  align-items: center; /*centraliza os itens na vertical. */
+  padding: 20px 50px; /*adiciona espaçamento 20pixels em cima/baixo e 50pixels nas laterais. */
   background: #880909; /* vermelho escuro */
   color: #fff;
   position: sticky;
@@ -56,16 +56,16 @@ body {
 
 /* Hero ilustrativo */
 /* Hero tela cheia */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero { /*seleciona a seção com a classe hero. */
+  display: flex; /*transforma o Hero em um container flexível. */
+  align-items: center; /*alinha os elementos no meio vertical da tela.*/
+  justify-content: center; /* centraliza os elementos horizontalmente.*/
   height: 100vh; /* ocupa toda a tela */
   background: url("https://d2yghbees9788u.cloudfront.net/foodconnection/2022/03/Alternativas-buscam-reduzir-o-uso-de-lenha-nas-pizzarias.png")
               no-repeat center center/cover; /* imagem de fundo */
-  position: relative;
-  color: white;
-  text-align: center;
+  position: relative; /*permite que elementos dentro do Hero sejam posicionados em relação a ele. */
+  color: white; /*define a cor do texto como branca, para contrastar com o fundo.*/
+  text-align: center; /*alinha todo o conteúdo de texto no centro.*/
 }
 
 /* Camada de cor sobre a imagem (opcional para contraste) */
