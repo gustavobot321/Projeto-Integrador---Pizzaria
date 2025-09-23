@@ -30,19 +30,19 @@
   </div>
 </section>
 
-
-  <!-- Cardápio -->
-  <!-- Cardápio --> 
+<!-- Cardápio -->
 <section id="cardapio" class="section cardapio">
   <h2>Nosso Cardápio</h2>
   <div class="cards">
-    
+
     <!-- Margherita -->
     <div class="card">
       <div class="card-img" style="background-image: url('https://thumbs.dreamstime.com/b/pizza-tradicional-italiana-margherita-num-quadro-de-corte-madeira-fundo-preto-com-mozzarella-tomate-e-manjeric%C3%A3o-posi%C3%A7%C3%A3o-190054562.jpg');"></div>
       <div class="card-content">
         <h3>Margherita</h3>
         <p>Molho de tomate, mussarela fresca, manjericão e azeite de oliva.</p>
+        <span class="price">R$ 90,00</span>
+        <button class="add-to-cart" data-name="Margherita" data-price="90">Adicionar</button>
       </div>
     </div>
 
@@ -52,6 +52,8 @@
       <div class="card-content">
         <h3>Calabresa</h3>
         <p>Molho de tomate, mussarela, calabresa fatiada e cebola roxa.</p>
+        <span class="price">R$ 87,00</span>
+        <button class="add-to-cart" data-name="Calabresa" data-price="87">Adicionar</button>
       </div>
     </div>
 
@@ -61,6 +63,8 @@
       <div class="card-content">
         <h3>Portuguesa</h3>
         <p>Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas.</p>
+        <span class="price">R$ 70,00</span>
+        <button class="add-to-cart" data-name="Portuguesa" data-price="70">Adicionar</button>
       </div>
     </div>
 
@@ -70,10 +74,24 @@
       <div class="card-content">
         <h3>Quatro Queijos</h3>
         <p>Mussarela, parmesão, gorgonzola e catupiry, uma explosão de sabor!</p>
+        <span class="price">R$ 88,00</span>
+        <button class="add-to-cart" data-name="Quatro Queijos" data-price="88">Adicionar</button>
       </div>
     </div>
-
   </div>
+</section>
+
+<!-- Carrinho -->
+<section id="carrinho" class="section">
+  <h2>🛒 Carrinho de Compras</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: R$ <span id="cart-total">0.00</span></p>
+  <button id="checkout">Finalizar Pedido</button>
+</section>
+
+
+
+ 
 </section>
 
 
@@ -92,5 +110,7 @@
   <footer>
     <p>&copy; 2025 Pizzaria Forno a Lenha - Tradição em cada fatia 🍕🔥</p>
   </footer>
+  <script src="carrinho.js"></script>
+
 </body>
 </html>
