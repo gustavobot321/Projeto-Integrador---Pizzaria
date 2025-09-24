@@ -21,6 +21,7 @@ body {  /*Corpo da página */
 
 /* Navbar ( Menu de navegação*/
 .navbar {
+  height: 70px;
   display: flex; /*transforma a navbar em um container flexível. */
   justify-content: space-between; /*joga os itens para as extremidades (um na esquerda, outro na direita, espaço no meio). */
   align-items: center; /*centraliza os itens na vertical. */
@@ -228,3 +229,15 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre a logo e o texto */
+}
+
+.logo img {
+  max-height: 78px; /* ajuste o tamanho da logo */
+  width: auto;
+  object-fit: contain;
+}
+
