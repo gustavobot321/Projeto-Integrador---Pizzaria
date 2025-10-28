@@ -240,4 +240,8 @@ footer {
   width: auto;
   object-fit: contain;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
